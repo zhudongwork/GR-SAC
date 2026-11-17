@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import os
 import sys
+import traceback
 from typing import Any
 
 import numpy as np
@@ -15,6 +16,26 @@ VENDORED_SIM_DIR = os.path.dirname(os.path.abspath(__file__))
 
 CAM_FRONT = "front"
 CAM_WRIST = "wrist"
+
+
+def _scene_sampling_exhausted(error: BaseException) -> bool:
+    """Recognize only the vendored placement sampler's exhausted search.
+
+    SceneGenerationError also wraps driver/assets/programming failures. Those
+    must remain fatal rather than being treated as unavailable train scenes.
+    """
+    chain, seen = [], set()
+    while error is not None and id(error) not in seen:
+        seen.add(id(error))
+        chain.append(error)
+        error = error.__cause__ or error.__context__
+    scene_error = any(type(exc).__name__ == "SceneGenerationError"
+                      and type(exc).__module__.endswith(".utils.SceneGenerationError")
+                      for exc in chain)
+    prefixes = tuple(f"{name}: Region crowded or constraints too tight, no feasible position found."
+                     for name in ("spawn_random_target", "spawn_random_cube"))
+    return bool(scene_error and chain and type(chain[-1]) is RuntimeError
+                and str(chain[-1]).startswith(prefixes))
 
 
 def _setup_robomme_path() -> None:
@@ -110,9 +131,12 @@ class RoboMMESimEnv:
 
     def reset(self, episode_idx: int) -> tuple[dict, dict]:
         self.close()
-        env = self.builder.make_env_for_episode(int(episode_idx))
-        obs, info = env.reset()
-        self.env = env
+        self.env = self.builder.make_env_for_episode(int(episode_idx))
+        try:
+            obs, info = self.env.reset()
+        except BaseException:
+            self.close()
+            raise
         self._status = str(info.get("status", "ongoing")) if isinstance(info, dict) else "ongoing"
         self._done = False
         return obs, info
@@ -175,6 +199,8 @@ class SimEnvService:
         task_name = payload["task"]
         episode = int(payload["episode"])
         last_err = "unknown"
+        last_traceback = ""
+        all_sampling_exhausted = True
         for attempt in range(self.reset_retries + 1):
             try:
                 self._ensure_env(task_name)
@@ -198,6 +224,9 @@ class SimEnvService:
                 }
             except Exception as e:
                 last_err = f"{type(e).__name__}: {e}"
+                all_sampling_exhausted = all_sampling_exhausted and _scene_sampling_exhausted(e)
+                # Preserve the scene/planner error chained through gym.make().
+                last_traceback = traceback.format_exc()
                 try:
                     if self.env is not None:
                         self.env.close()
@@ -205,7 +234,9 @@ class SimEnvService:
                     pass
                 self.env = None
                 self.task_name = None
-        return {"ok": False, "reason": f"reset_failed: {last_err}"}
+        return {"ok": False, "reason": f"reset_failed: {last_err}",
+                "attempts": self.reset_retries + 1, "traceback": last_traceback,
+                "failure_kind": "scene_sampling_exhausted" if all_sampling_exhausted else "reset_error"}
 
     def step(self, payload: dict) -> dict:
         action_chunk = np.asarray(payload["action_chunk"], dtype=np.float64)

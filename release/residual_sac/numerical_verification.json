@@ -1,0 +1,9 @@
+{
+  "historical_implementation": "804fef0d03d3581b1428682a290886ce2cf88b1a",
+  "reference_actor_arrays": "exactly_equal",
+  "deterministic_actor_outputs_cpu": "bitwise_equal",
+  "one_sac_update_cpu_actor_critics_alpha": "bitwise_equal",
+  "synthetic_batch_size": 8,
+  "device": "cpu",
+  "full_gpu_training_or_evaluation_rerun": false
+}

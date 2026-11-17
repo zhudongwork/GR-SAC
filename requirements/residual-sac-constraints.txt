@@ -1,0 +1,16 @@
+# Experiment-server versions. Install the pinned ManiSkill fork separately.
+torch==2.4.1
+torchvision==0.19.1
+transformers==5.13.1
+numpy==1.26.4
+sapien==3.0.3
+flash_attn==2.7.4.post1
+safetensors==0.8.0
+gymnasium==0.29.1
+pillow==12.3.0
+av==17.1.0
+accelerate==1.15.0
+huggingface_hub==1.33.0
+scipy==1.15.3
+opencv-python==4.11.0.86
+mplib==0.1.1

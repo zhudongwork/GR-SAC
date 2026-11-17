@@ -1,0 +1,4 @@
+# Prompts and task descriptions are ordinary Git text blobs, not LFS pointers.
+# Override the broad extension rules inherited from ../.gitattributes.
+*.txt -filter !diff !merge -text
+*.json -filter !diff !merge -text

@@ -1,0 +1,116 @@
+{
+  "summary": {
+    "residual": {
+      "tasks": {
+        "PickXtimes": {
+          "successes": 50,
+          "episodes": 50,
+          "success_rate": 1.0
+        },
+        "StopCube": {
+          "successes": 45,
+          "episodes": 50,
+          "success_rate": 0.9
+        },
+        "SwingXtimes": {
+          "successes": 50,
+          "episodes": 50,
+          "success_rate": 1.0
+        },
+        "BinFill": {
+          "successes": 38,
+          "episodes": 50,
+          "success_rate": 0.76
+        },
+        "VideoUnmaskSwap": {
+          "successes": 46,
+          "episodes": 50,
+          "success_rate": 0.92
+        },
+        "VideoUnmask": {
+          "successes": 50,
+          "episodes": 50,
+          "success_rate": 1.0
+        },
+        "ButtonUnmaskSwap": {
+          "successes": 47,
+          "episodes": 50,
+          "success_rate": 0.94
+        },
+        "ButtonUnmask": {
+          "successes": 49,
+          "episodes": 50,
+          "success_rate": 0.98
+        },
+        "VideoRepick": {
+          "successes": 32,
+          "episodes": 50,
+          "success_rate": 0.64
+        },
+        "VideoPlaceButton": {
+          "successes": 44,
+          "episodes": 50,
+          "success_rate": 0.88
+        },
+        "VideoPlaceOrder": {
+          "successes": 43,
+          "episodes": 50,
+          "success_rate": 0.86
+        },
+        "PickHighlight": {
+          "successes": 45,
+          "episodes": 50,
+          "success_rate": 0.9
+        },
+        "InsertPeg": {
+          "successes": 26,
+          "episodes": 50,
+          "success_rate": 0.52
+        },
+        "MoveCube": {
+          "successes": 50,
+          "episodes": 50,
+          "success_rate": 1.0
+        },
+        "PatternLock": {
+          "successes": 47,
+          "episodes": 50,
+          "success_rate": 0.94
+        },
+        "RouteStick": {
+          "successes": 49,
+          "episodes": 50,
+          "success_rate": 0.98
+        }
+      },
+      "macro_success_rate": 0.88875,
+      "control_diagnostics": {
+        "active_fraction": 0.4886775040817775,
+        "mean_abs_residual": 0.01601360560125484,
+        "mean_abs_offset_rad": 6.900509134705501e-05,
+        "offset_bound_fraction": 0.0,
+        "max_abs_offset_rad": 0.005177841987460852
+      },
+      "gate_diagnostics": {
+        "steps": 253566,
+        "active_steps": 123912,
+        "arm_rejected_steps": 111136,
+        "tracking_rejected_steps": 7052,
+        "gripper_rejected_steps": 19705,
+        "gripper_change_steps": 19705,
+        "gripper_change_active_steps": 0,
+        "newly_eligible_steps": 16840,
+        "nonterminal_active_steps": 123226,
+        "active_to_inactive_steps": 12440,
+        "nonzero_actions_before_gate_exit": 12440,
+        "active_fraction": 0.4886775040817775,
+        "gripper_change_active_fraction": 0.0,
+        "newly_eligible_fraction": 0.06641268939842092,
+        "gate_exit_fraction": 0.10095272101666856
+      }
+    }
+  },
+  "episodes": 800,
+  "successes": 711,
+  "checkpoint_updates": 35000
+}

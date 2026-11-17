@@ -24,8 +24,9 @@ from mani_skill.utils.geometry.rotation_conversions import (
     matrix_to_quaternion,
 )
 
-from .utils.SceneGenerationError import SceneGenerationError
 from .utils import *
+# Keep the exception class after the wildcard import, which also exports its module.
+from .utils.SceneGenerationError import SceneGenerationError
 from .utils.subgoal_evaluate_func import static_check
 from .utils.object_generation import spawn_fixed_cube, build_board_with_hole
 from .utils import reset_panda

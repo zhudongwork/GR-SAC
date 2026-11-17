@@ -1,0 +1,4146 @@
+{
+  "result": {
+    "successes": 711,
+    "episodes": 800,
+    "macro_success_rate": 0.88875,
+    "checkpoint_updates": 35000
+  },
+  "lineage": {
+    "initial_training_commit": "ebfe29525048e1b4251bfd7c41c055a810e030a8",
+    "resumed_training_commit": "ec4381c90336f5cd63ec4ce718a92bc6d695bdd6",
+    "continuation_commit": "804fef0d03d3581b1428682a290886ce2cf88b1a",
+    "description": "SAC to 20000 updates, resume full learner/replay state, select the 35000-update actor from continuation"
+  },
+  "checkpoint": {
+    "file": "release/residual_sac/actor_00035000.pt",
+    "sha256": "bf6cf83631580dfe951e2adbf31222eefe0149ba5b0a602ff389ea0392428201",
+    "original_checkpoint_sha256": "831f796072fc4ab6602721a8c19e45c5b25042fa26ea7155f77a37b9a01c18e7",
+    "export_changes": "Portable artifact paths and disabled-option removal only; all actor arrays unchanged"
+  },
+  "evaluation": {
+    "split": "test",
+    "mode": "residual",
+    "gpus": "0,1,2,3,4,5,6,7",
+    "group_size": 10,
+    "episodes_per_task": 50,
+    "episode_selection": "first",
+    "seed": 2026
+  },
+  "test_episodes": [
+    {
+      "task": "PickXtimes",
+      "episode": 0,
+      "seed": 510000
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 1,
+      "seed": 510100
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 2,
+      "seed": 510200
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 3,
+      "seed": 510300
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 4,
+      "seed": 510400
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 5,
+      "seed": 510500
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 6,
+      "seed": 510600
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 7,
+      "seed": 510700
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 8,
+      "seed": 510800
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 9,
+      "seed": 510900
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 10,
+      "seed": 511000
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 11,
+      "seed": 511100
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 12,
+      "seed": 511200
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 13,
+      "seed": 511300
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 14,
+      "seed": 511400
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 15,
+      "seed": 511501
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 16,
+      "seed": 511600
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 17,
+      "seed": 511700
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 18,
+      "seed": 511800
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 19,
+      "seed": 511900
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 20,
+      "seed": 512000
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 21,
+      "seed": 512100
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 22,
+      "seed": 512200
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 23,
+      "seed": 512300
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 24,
+      "seed": 512400
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 25,
+      "seed": 512500
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 26,
+      "seed": 512600
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 27,
+      "seed": 512700
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 28,
+      "seed": 512800
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 29,
+      "seed": 512900
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 30,
+      "seed": 513000
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 31,
+      "seed": 513100
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 32,
+      "seed": 513200
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 33,
+      "seed": 513300
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 34,
+      "seed": 513400
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 35,
+      "seed": 513500
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 36,
+      "seed": 513600
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 37,
+      "seed": 513700
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 38,
+      "seed": 513800
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 39,
+      "seed": 513900
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 40,
+      "seed": 514000
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 41,
+      "seed": 514100
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 42,
+      "seed": 514200
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 43,
+      "seed": 514300
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 44,
+      "seed": 514400
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 45,
+      "seed": 514500
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 46,
+      "seed": 514600
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 47,
+      "seed": 514700
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 48,
+      "seed": 514800
+    },
+    {
+      "task": "PickXtimes",
+      "episode": 49,
+      "seed": 514900
+    },
+    {
+      "task": "StopCube",
+      "episode": 0,
+      "seed": 520000
+    },
+    {
+      "task": "StopCube",
+      "episode": 1,
+      "seed": 520100
+    },
+    {
+      "task": "StopCube",
+      "episode": 2,
+      "seed": 520200
+    },
+    {
+      "task": "StopCube",
+      "episode": 3,
+      "seed": 520300
+    },
+    {
+      "task": "StopCube",
+      "episode": 4,
+      "seed": 520400
+    },
+    {
+      "task": "StopCube",
+      "episode": 5,
+      "seed": 520500
+    },
+    {
+      "task": "StopCube",
+      "episode": 6,
+      "seed": 520600
+    },
+    {
+      "task": "StopCube",
+      "episode": 7,
+      "seed": 520700
+    },
+    {
+      "task": "StopCube",
+      "episode": 8,
+      "seed": 520800
+    },
+    {
+      "task": "StopCube",
+      "episode": 9,
+      "seed": 520901
+    },
+    {
+      "task": "StopCube",
+      "episode": 10,
+      "seed": 521000
+    },
+    {
+      "task": "StopCube",
+      "episode": 11,
+      "seed": 521100
+    },
+    {
+      "task": "StopCube",
+      "episode": 12,
+      "seed": 521200
+    },
+    {
+      "task": "StopCube",
+      "episode": 13,
+      "seed": 521300
+    },
+    {
+      "task": "StopCube",
+      "episode": 14,
+      "seed": 521400
+    },
+    {
+      "task": "StopCube",
+      "episode": 15,
+      "seed": 521500
+    },
+    {
+      "task": "StopCube",
+      "episode": 16,
+      "seed": 521600
+    },
+    {
+      "task": "StopCube",
+      "episode": 17,
+      "seed": 521700
+    },
+    {
+      "task": "StopCube",
+      "episode": 18,
+      "seed": 521800
+    },
+    {
+      "task": "StopCube",
+      "episode": 19,
+      "seed": 521900
+    },
+    {
+      "task": "StopCube",
+      "episode": 20,
+      "seed": 522001
+    },
+    {
+      "task": "StopCube",
+      "episode": 21,
+      "seed": 522100
+    },
+    {
+      "task": "StopCube",
+      "episode": 22,
+      "seed": 522200
+    },
+    {
+      "task": "StopCube",
+      "episode": 23,
+      "seed": 522300
+    },
+    {
+      "task": "StopCube",
+      "episode": 24,
+      "seed": 522400
+    },
+    {
+      "task": "StopCube",
+      "episode": 25,
+      "seed": 522501
+    },
+    {
+      "task": "StopCube",
+      "episode": 26,
+      "seed": 522600
+    },
+    {
+      "task": "StopCube",
+      "episode": 27,
+      "seed": 522700
+    },
+    {
+      "task": "StopCube",
+      "episode": 28,
+      "seed": 522800
+    },
+    {
+      "task": "StopCube",
+      "episode": 29,
+      "seed": 522900
+    },
+    {
+      "task": "StopCube",
+      "episode": 30,
+      "seed": 523000
+    },
+    {
+      "task": "StopCube",
+      "episode": 31,
+      "seed": 523100
+    },
+    {
+      "task": "StopCube",
+      "episode": 32,
+      "seed": 523200
+    },
+    {
+      "task": "StopCube",
+      "episode": 33,
+      "seed": 523300
+    },
+    {
+      "task": "StopCube",
+      "episode": 34,
+      "seed": 523400
+    },
+    {
+      "task": "StopCube",
+      "episode": 35,
+      "seed": 523500
+    },
+    {
+      "task": "StopCube",
+      "episode": 36,
+      "seed": 523600
+    },
+    {
+      "task": "StopCube",
+      "episode": 37,
+      "seed": 523700
+    },
+    {
+      "task": "StopCube",
+      "episode": 38,
+      "seed": 523800
+    },
+    {
+      "task": "StopCube",
+      "episode": 39,
+      "seed": 523900
+    },
+    {
+      "task": "StopCube",
+      "episode": 40,
+      "seed": 524000
+    },
+    {
+      "task": "StopCube",
+      "episode": 41,
+      "seed": 524100
+    },
+    {
+      "task": "StopCube",
+      "episode": 42,
+      "seed": 524200
+    },
+    {
+      "task": "StopCube",
+      "episode": 43,
+      "seed": 524300
+    },
+    {
+      "task": "StopCube",
+      "episode": 44,
+      "seed": 524400
+    },
+    {
+      "task": "StopCube",
+      "episode": 45,
+      "seed": 524500
+    },
+    {
+      "task": "StopCube",
+      "episode": 46,
+      "seed": 524600
+    },
+    {
+      "task": "StopCube",
+      "episode": 47,
+      "seed": 524700
+    },
+    {
+      "task": "StopCube",
+      "episode": 48,
+      "seed": 524800
+    },
+    {
+      "task": "StopCube",
+      "episode": 49,
+      "seed": 524900
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 0,
+      "seed": 530000
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 1,
+      "seed": 530100
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 2,
+      "seed": 530200
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 3,
+      "seed": 530300
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 4,
+      "seed": 530400
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 5,
+      "seed": 530500
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 6,
+      "seed": 530600
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 7,
+      "seed": 530700
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 8,
+      "seed": 530800
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 9,
+      "seed": 530900
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 10,
+      "seed": 531000
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 11,
+      "seed": 531100
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 12,
+      "seed": 531201
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 13,
+      "seed": 531300
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 14,
+      "seed": 531401
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 15,
+      "seed": 531500
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 16,
+      "seed": 531600
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 17,
+      "seed": 531700
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 18,
+      "seed": 531800
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 19,
+      "seed": 531901
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 20,
+      "seed": 532000
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 21,
+      "seed": 532100
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 22,
+      "seed": 532200
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 23,
+      "seed": 532300
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 24,
+      "seed": 532400
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 25,
+      "seed": 532500
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 26,
+      "seed": 532601
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 27,
+      "seed": 532700
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 28,
+      "seed": 532800
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 29,
+      "seed": 532900
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 30,
+      "seed": 533000
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 31,
+      "seed": 533100
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 32,
+      "seed": 533200
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 33,
+      "seed": 533300
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 34,
+      "seed": 533401
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 35,
+      "seed": 533500
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 36,
+      "seed": 533600
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 37,
+      "seed": 533700
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 38,
+      "seed": 533800
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 39,
+      "seed": 533900
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 40,
+      "seed": 534000
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 41,
+      "seed": 534100
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 42,
+      "seed": 534200
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 43,
+      "seed": 534300
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 44,
+      "seed": 534400
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 45,
+      "seed": 534500
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 46,
+      "seed": 534600
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 47,
+      "seed": 534700
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 48,
+      "seed": 534800
+    },
+    {
+      "task": "SwingXtimes",
+      "episode": 49,
+      "seed": 534900
+    },
+    {
+      "task": "BinFill",
+      "episode": 0,
+      "seed": 540000
+    },
+    {
+      "task": "BinFill",
+      "episode": 1,
+      "seed": 540101
+    },
+    {
+      "task": "BinFill",
+      "episode": 2,
+      "seed": 540201
+    },
+    {
+      "task": "BinFill",
+      "episode": 3,
+      "seed": 540302
+    },
+    {
+      "task": "BinFill",
+      "episode": 4,
+      "seed": 540400
+    },
+    {
+      "task": "BinFill",
+      "episode": 5,
+      "seed": 540500
+    },
+    {
+      "task": "BinFill",
+      "episode": 6,
+      "seed": 540600
+    },
+    {
+      "task": "BinFill",
+      "episode": 7,
+      "seed": 540701
+    },
+    {
+      "task": "BinFill",
+      "episode": 8,
+      "seed": 540800
+    },
+    {
+      "task": "BinFill",
+      "episode": 9,
+      "seed": 540900
+    },
+    {
+      "task": "BinFill",
+      "episode": 10,
+      "seed": 541000
+    },
+    {
+      "task": "BinFill",
+      "episode": 11,
+      "seed": 541100
+    },
+    {
+      "task": "BinFill",
+      "episode": 12,
+      "seed": 541200
+    },
+    {
+      "task": "BinFill",
+      "episode": 13,
+      "seed": 541300
+    },
+    {
+      "task": "BinFill",
+      "episode": 14,
+      "seed": 541400
+    },
+    {
+      "task": "BinFill",
+      "episode": 15,
+      "seed": 541500
+    },
+    {
+      "task": "BinFill",
+      "episode": 16,
+      "seed": 541601
+    },
+    {
+      "task": "BinFill",
+      "episode": 17,
+      "seed": 541700
+    },
+    {
+      "task": "BinFill",
+      "episode": 18,
+      "seed": 541802
+    },
+    {
+      "task": "BinFill",
+      "episode": 19,
+      "seed": 541900
+    },
+    {
+      "task": "BinFill",
+      "episode": 20,
+      "seed": 542001
+    },
+    {
+      "task": "BinFill",
+      "episode": 21,
+      "seed": 542100
+    },
+    {
+      "task": "BinFill",
+      "episode": 22,
+      "seed": 542200
+    },
+    {
+      "task": "BinFill",
+      "episode": 23,
+      "seed": 542300
+    },
+    {
+      "task": "BinFill",
+      "episode": 24,
+      "seed": 542400
+    },
+    {
+      "task": "BinFill",
+      "episode": 25,
+      "seed": 542500
+    },
+    {
+      "task": "BinFill",
+      "episode": 26,
+      "seed": 542600
+    },
+    {
+      "task": "BinFill",
+      "episode": 27,
+      "seed": 542700
+    },
+    {
+      "task": "BinFill",
+      "episode": 28,
+      "seed": 542800
+    },
+    {
+      "task": "BinFill",
+      "episode": 29,
+      "seed": 542900
+    },
+    {
+      "task": "BinFill",
+      "episode": 30,
+      "seed": 543000
+    },
+    {
+      "task": "BinFill",
+      "episode": 31,
+      "seed": 543100
+    },
+    {
+      "task": "BinFill",
+      "episode": 32,
+      "seed": 543200
+    },
+    {
+      "task": "BinFill",
+      "episode": 33,
+      "seed": 543300
+    },
+    {
+      "task": "BinFill",
+      "episode": 34,
+      "seed": 543400
+    },
+    {
+      "task": "BinFill",
+      "episode": 35,
+      "seed": 543501
+    },
+    {
+      "task": "BinFill",
+      "episode": 36,
+      "seed": 543600
+    },
+    {
+      "task": "BinFill",
+      "episode": 37,
+      "seed": 543700
+    },
+    {
+      "task": "BinFill",
+      "episode": 38,
+      "seed": 543800
+    },
+    {
+      "task": "BinFill",
+      "episode": 39,
+      "seed": 543900
+    },
+    {
+      "task": "BinFill",
+      "episode": 40,
+      "seed": 544000
+    },
+    {
+      "task": "BinFill",
+      "episode": 41,
+      "seed": 544100
+    },
+    {
+      "task": "BinFill",
+      "episode": 42,
+      "seed": 544200
+    },
+    {
+      "task": "BinFill",
+      "episode": 43,
+      "seed": 544300
+    },
+    {
+      "task": "BinFill",
+      "episode": 44,
+      "seed": 544400
+    },
+    {
+      "task": "BinFill",
+      "episode": 45,
+      "seed": 544500
+    },
+    {
+      "task": "BinFill",
+      "episode": 46,
+      "seed": 544600
+    },
+    {
+      "task": "BinFill",
+      "episode": 47,
+      "seed": 544700
+    },
+    {
+      "task": "BinFill",
+      "episode": 48,
+      "seed": 544800
+    },
+    {
+      "task": "BinFill",
+      "episode": 49,
+      "seed": 544900
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 0,
+      "seed": 550000
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 1,
+      "seed": 550100
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 2,
+      "seed": 550200
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 3,
+      "seed": 550300
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 4,
+      "seed": 550400
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 5,
+      "seed": 550500
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 6,
+      "seed": 550600
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 7,
+      "seed": 550700
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 8,
+      "seed": 550800
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 9,
+      "seed": 550900
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 10,
+      "seed": 551000
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 11,
+      "seed": 551100
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 12,
+      "seed": 551200
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 13,
+      "seed": 551300
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 14,
+      "seed": 551400
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 15,
+      "seed": 551500
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 16,
+      "seed": 551600
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 17,
+      "seed": 551700
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 18,
+      "seed": 551800
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 19,
+      "seed": 551900
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 20,
+      "seed": 552000
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 21,
+      "seed": 552100
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 22,
+      "seed": 552200
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 23,
+      "seed": 552300
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 24,
+      "seed": 552400
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 25,
+      "seed": 552500
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 26,
+      "seed": 552600
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 27,
+      "seed": 552700
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 28,
+      "seed": 552800
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 29,
+      "seed": 552900
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 30,
+      "seed": 553000
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 31,
+      "seed": 553100
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 32,
+      "seed": 553200
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 33,
+      "seed": 553300
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 34,
+      "seed": 553400
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 35,
+      "seed": 553500
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 36,
+      "seed": 553600
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 37,
+      "seed": 553700
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 38,
+      "seed": 553800
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 39,
+      "seed": 553900
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 40,
+      "seed": 554000
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 41,
+      "seed": 554100
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 42,
+      "seed": 554200
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 43,
+      "seed": 554300
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 44,
+      "seed": 554400
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 45,
+      "seed": 554500
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 46,
+      "seed": 554600
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 47,
+      "seed": 554700
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 48,
+      "seed": 554800
+    },
+    {
+      "task": "VideoUnmaskSwap",
+      "episode": 49,
+      "seed": 554900
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 0,
+      "seed": 560000
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 1,
+      "seed": 560100
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 2,
+      "seed": 560200
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 3,
+      "seed": 560300
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 4,
+      "seed": 560400
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 5,
+      "seed": 560500
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 6,
+      "seed": 560600
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 7,
+      "seed": 560700
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 8,
+      "seed": 560800
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 9,
+      "seed": 560900
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 10,
+      "seed": 561000
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 11,
+      "seed": 561100
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 12,
+      "seed": 561200
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 13,
+      "seed": 561300
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 14,
+      "seed": 561400
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 15,
+      "seed": 561500
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 16,
+      "seed": 561600
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 17,
+      "seed": 561700
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 18,
+      "seed": 561800
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 19,
+      "seed": 561900
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 20,
+      "seed": 562000
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 21,
+      "seed": 562100
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 22,
+      "seed": 562200
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 23,
+      "seed": 562300
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 24,
+      "seed": 562400
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 25,
+      "seed": 562500
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 26,
+      "seed": 562600
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 27,
+      "seed": 562700
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 28,
+      "seed": 562800
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 29,
+      "seed": 562900
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 30,
+      "seed": 563000
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 31,
+      "seed": 563100
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 32,
+      "seed": 563200
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 33,
+      "seed": 563300
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 34,
+      "seed": 563400
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 35,
+      "seed": 563500
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 36,
+      "seed": 563600
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 37,
+      "seed": 563700
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 38,
+      "seed": 563800
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 39,
+      "seed": 563900
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 40,
+      "seed": 564000
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 41,
+      "seed": 564100
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 42,
+      "seed": 564200
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 43,
+      "seed": 564300
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 44,
+      "seed": 564400
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 45,
+      "seed": 564500
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 46,
+      "seed": 564600
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 47,
+      "seed": 564700
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 48,
+      "seed": 564800
+    },
+    {
+      "task": "VideoUnmask",
+      "episode": 49,
+      "seed": 564900
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 0,
+      "seed": 570000
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 1,
+      "seed": 570100
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 2,
+      "seed": 570200
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 3,
+      "seed": 570300
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 4,
+      "seed": 570400
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 5,
+      "seed": 570500
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 6,
+      "seed": 570600
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 7,
+      "seed": 570700
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 8,
+      "seed": 570800
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 9,
+      "seed": 570900
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 10,
+      "seed": 571000
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 11,
+      "seed": 571100
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 12,
+      "seed": 571200
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 13,
+      "seed": 571300
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 14,
+      "seed": 571400
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 15,
+      "seed": 571500
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 16,
+      "seed": 571600
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 17,
+      "seed": 571700
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 18,
+      "seed": 571800
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 19,
+      "seed": 571900
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 20,
+      "seed": 572000
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 21,
+      "seed": 572100
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 22,
+      "seed": 572200
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 23,
+      "seed": 572300
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 24,
+      "seed": 572400
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 25,
+      "seed": 572500
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 26,
+      "seed": 572600
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 27,
+      "seed": 572700
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 28,
+      "seed": 572800
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 29,
+      "seed": 572900
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 30,
+      "seed": 573000
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 31,
+      "seed": 573100
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 32,
+      "seed": 573200
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 33,
+      "seed": 573300
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 34,
+      "seed": 573400
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 35,
+      "seed": 573500
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 36,
+      "seed": 573600
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 37,
+      "seed": 573700
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 38,
+      "seed": 573800
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 39,
+      "seed": 573900
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 40,
+      "seed": 574000
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 41,
+      "seed": 574100
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 42,
+      "seed": 574200
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 43,
+      "seed": 574300
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 44,
+      "seed": 574400
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 45,
+      "seed": 574500
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 46,
+      "seed": 574600
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 47,
+      "seed": 574700
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 48,
+      "seed": 574800
+    },
+    {
+      "task": "ButtonUnmaskSwap",
+      "episode": 49,
+      "seed": 574900
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 0,
+      "seed": 580000
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 1,
+      "seed": 580100
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 2,
+      "seed": 580201
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 3,
+      "seed": 580300
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 4,
+      "seed": 580402
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 5,
+      "seed": 580500
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 6,
+      "seed": 580600
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 7,
+      "seed": 580700
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 8,
+      "seed": 580800
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 9,
+      "seed": 580900
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 10,
+      "seed": 581000
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 11,
+      "seed": 581100
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 12,
+      "seed": 581200
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 13,
+      "seed": 581300
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 14,
+      "seed": 581400
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 15,
+      "seed": 581500
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 16,
+      "seed": 581600
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 17,
+      "seed": 581700
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 18,
+      "seed": 581800
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 19,
+      "seed": 581900
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 20,
+      "seed": 582000
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 21,
+      "seed": 582100
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 22,
+      "seed": 582200
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 23,
+      "seed": 582300
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 24,
+      "seed": 582400
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 25,
+      "seed": 582500
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 26,
+      "seed": 582600
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 27,
+      "seed": 582700
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 28,
+      "seed": 582800
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 29,
+      "seed": 582900
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 30,
+      "seed": 583000
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 31,
+      "seed": 583100
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 32,
+      "seed": 583200
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 33,
+      "seed": 583300
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 34,
+      "seed": 583400
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 35,
+      "seed": 583500
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 36,
+      "seed": 583600
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 37,
+      "seed": 583700
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 38,
+      "seed": 583800
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 39,
+      "seed": 583900
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 40,
+      "seed": 584000
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 41,
+      "seed": 584100
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 42,
+      "seed": 584200
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 43,
+      "seed": 584300
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 44,
+      "seed": 584400
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 45,
+      "seed": 584500
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 46,
+      "seed": 584600
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 47,
+      "seed": 584701
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 48,
+      "seed": 584800
+    },
+    {
+      "task": "ButtonUnmask",
+      "episode": 49,
+      "seed": 584900
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 0,
+      "seed": 590000
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 1,
+      "seed": 590100
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 2,
+      "seed": 590200
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 3,
+      "seed": 590300
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 4,
+      "seed": 590400
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 5,
+      "seed": 590500
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 6,
+      "seed": 590600
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 7,
+      "seed": 590700
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 8,
+      "seed": 590800
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 9,
+      "seed": 590900
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 10,
+      "seed": 591000
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 11,
+      "seed": 591100
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 12,
+      "seed": 591200
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 13,
+      "seed": 591300
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 14,
+      "seed": 591400
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 15,
+      "seed": 591500
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 16,
+      "seed": 591600
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 17,
+      "seed": 591700
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 18,
+      "seed": 591800
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 19,
+      "seed": 591900
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 20,
+      "seed": 592000
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 21,
+      "seed": 592100
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 22,
+      "seed": 592200
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 23,
+      "seed": 592300
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 24,
+      "seed": 592400
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 25,
+      "seed": 592500
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 26,
+      "seed": 592600
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 27,
+      "seed": 592700
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 28,
+      "seed": 592800
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 29,
+      "seed": 592900
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 30,
+      "seed": 593000
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 31,
+      "seed": 593100
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 32,
+      "seed": 593200
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 33,
+      "seed": 593300
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 34,
+      "seed": 593401
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 35,
+      "seed": 593500
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 36,
+      "seed": 593600
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 37,
+      "seed": 593700
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 38,
+      "seed": 593800
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 39,
+      "seed": 593900
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 40,
+      "seed": 594000
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 41,
+      "seed": 594100
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 42,
+      "seed": 594200
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 43,
+      "seed": 594300
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 44,
+      "seed": 594400
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 45,
+      "seed": 594500
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 46,
+      "seed": 594600
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 47,
+      "seed": 594700
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 48,
+      "seed": 594800
+    },
+    {
+      "task": "VideoRepick",
+      "episode": 49,
+      "seed": 594900
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 0,
+      "seed": 600000
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 1,
+      "seed": 600100
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 2,
+      "seed": 600200
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 3,
+      "seed": 600300
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 4,
+      "seed": 600400
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 5,
+      "seed": 600500
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 6,
+      "seed": 600601
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 7,
+      "seed": 600700
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 8,
+      "seed": 600800
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 9,
+      "seed": 600900
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 10,
+      "seed": 601000
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 11,
+      "seed": 601100
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 12,
+      "seed": 601200
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 13,
+      "seed": 601300
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 14,
+      "seed": 601400
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 15,
+      "seed": 601501
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 16,
+      "seed": 601600
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 17,
+      "seed": 601700
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 18,
+      "seed": 601800
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 19,
+      "seed": 601901
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 20,
+      "seed": 602000
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 21,
+      "seed": 602100
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 22,
+      "seed": 602200
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 23,
+      "seed": 602300
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 24,
+      "seed": 602400
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 25,
+      "seed": 602500
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 26,
+      "seed": 602600
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 27,
+      "seed": 602701
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 28,
+      "seed": 602800
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 29,
+      "seed": 602900
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 30,
+      "seed": 603000
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 31,
+      "seed": 603100
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 32,
+      "seed": 603200
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 33,
+      "seed": 603300
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 34,
+      "seed": 603401
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 35,
+      "seed": 603500
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 36,
+      "seed": 603600
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 37,
+      "seed": 603700
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 38,
+      "seed": 603800
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 39,
+      "seed": 603900
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 40,
+      "seed": 604000
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 41,
+      "seed": 604100
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 42,
+      "seed": 604200
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 43,
+      "seed": 604300
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 44,
+      "seed": 604401
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 45,
+      "seed": 604500
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 46,
+      "seed": 604600
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 47,
+      "seed": 604700
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 48,
+      "seed": 604800
+    },
+    {
+      "task": "VideoPlaceButton",
+      "episode": 49,
+      "seed": 604900
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 0,
+      "seed": 610002
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 1,
+      "seed": 610100
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 2,
+      "seed": 610203
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 3,
+      "seed": 610300
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 4,
+      "seed": 610402
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 5,
+      "seed": 610500
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 6,
+      "seed": 610601
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 7,
+      "seed": 610701
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 8,
+      "seed": 610801
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 9,
+      "seed": 610901
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 10,
+      "seed": 611000
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 11,
+      "seed": 611101
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 12,
+      "seed": 611201
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 13,
+      "seed": 611301
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 14,
+      "seed": 611402
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 15,
+      "seed": 611501
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 16,
+      "seed": 611601
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 17,
+      "seed": 611700
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 18,
+      "seed": 611802
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 19,
+      "seed": 611901
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 20,
+      "seed": 612001
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 21,
+      "seed": 612100
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 22,
+      "seed": 612201
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 23,
+      "seed": 612304
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 24,
+      "seed": 612400
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 25,
+      "seed": 612500
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 26,
+      "seed": 612600
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 27,
+      "seed": 612701
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 28,
+      "seed": 612800
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 29,
+      "seed": 612900
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 30,
+      "seed": 613001
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 31,
+      "seed": 613100
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 32,
+      "seed": 613202
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 33,
+      "seed": 613301
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 34,
+      "seed": 613401
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 35,
+      "seed": 613500
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 36,
+      "seed": 613601
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 37,
+      "seed": 613702
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 38,
+      "seed": 613800
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 39,
+      "seed": 613900
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 40,
+      "seed": 614000
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 41,
+      "seed": 614100
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 42,
+      "seed": 614200
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 43,
+      "seed": 614300
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 44,
+      "seed": 614401
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 45,
+      "seed": 614500
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 46,
+      "seed": 614601
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 47,
+      "seed": 614701
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 48,
+      "seed": 614801
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 49,
+      "seed": 614900
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 0,
+      "seed": 620000
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 1,
+      "seed": 620100
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 2,
+      "seed": 620200
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 3,
+      "seed": 620301
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 4,
+      "seed": 620400
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 5,
+      "seed": 620500
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 6,
+      "seed": 620600
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 7,
+      "seed": 620700
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 8,
+      "seed": 620800
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 9,
+      "seed": 620900
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 10,
+      "seed": 621000
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 11,
+      "seed": 621100
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 12,
+      "seed": 621200
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 13,
+      "seed": 621300
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 14,
+      "seed": 621400
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 15,
+      "seed": 621500
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 16,
+      "seed": 621600
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 17,
+      "seed": 621700
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 18,
+      "seed": 621800
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 19,
+      "seed": 621900
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 20,
+      "seed": 622000
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 21,
+      "seed": 622100
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 22,
+      "seed": 622200
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 23,
+      "seed": 622300
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 24,
+      "seed": 622400
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 25,
+      "seed": 622501
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 26,
+      "seed": 622600
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 27,
+      "seed": 622700
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 28,
+      "seed": 622800
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 29,
+      "seed": 622900
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 30,
+      "seed": 623000
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 31,
+      "seed": 623100
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 32,
+      "seed": 623200
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 33,
+      "seed": 623300
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 34,
+      "seed": 623400
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 35,
+      "seed": 623500
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 36,
+      "seed": 623600
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 37,
+      "seed": 623700
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 38,
+      "seed": 623800
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 39,
+      "seed": 623900
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 40,
+      "seed": 624000
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 41,
+      "seed": 624100
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 42,
+      "seed": 624200
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 43,
+      "seed": 624300
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 44,
+      "seed": 624400
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 45,
+      "seed": 624500
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 46,
+      "seed": 624600
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 47,
+      "seed": 624700
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 48,
+      "seed": 624800
+    },
+    {
+      "task": "PickHighlight",
+      "episode": 49,
+      "seed": 624900
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 0,
+      "seed": 630000
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 1,
+      "seed": 630100
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 2,
+      "seed": 630200
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 3,
+      "seed": 630300
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 4,
+      "seed": 630400
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 5,
+      "seed": 630500
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 6,
+      "seed": 630600
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 7,
+      "seed": 630700
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 8,
+      "seed": 630801
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 9,
+      "seed": 630901
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 10,
+      "seed": 631000
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 11,
+      "seed": 631100
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 12,
+      "seed": 631200
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 13,
+      "seed": 631300
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 14,
+      "seed": 631400
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 15,
+      "seed": 631501
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 16,
+      "seed": 631600
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 17,
+      "seed": 631701
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 18,
+      "seed": 631800
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 19,
+      "seed": 631900
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 20,
+      "seed": 632000
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 21,
+      "seed": 632101
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 22,
+      "seed": 632200
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 23,
+      "seed": 632300
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 24,
+      "seed": 632400
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 25,
+      "seed": 632500
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 26,
+      "seed": 632600
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 27,
+      "seed": 632700
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 28,
+      "seed": 632800
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 29,
+      "seed": 632901
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 30,
+      "seed": 633000
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 31,
+      "seed": 633100
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 32,
+      "seed": 633200
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 33,
+      "seed": 633300
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 34,
+      "seed": 633401
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 35,
+      "seed": 633500
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 36,
+      "seed": 633600
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 37,
+      "seed": 633700
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 38,
+      "seed": 633801
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 39,
+      "seed": 633901
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 40,
+      "seed": 634000
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 41,
+      "seed": 634100
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 42,
+      "seed": 634201
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 43,
+      "seed": 634300
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 44,
+      "seed": 634400
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 45,
+      "seed": 634500
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 46,
+      "seed": 634601
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 47,
+      "seed": 634700
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 48,
+      "seed": 634800
+    },
+    {
+      "task": "InsertPeg",
+      "episode": 49,
+      "seed": 634900
+    },
+    {
+      "task": "MoveCube",
+      "episode": 0,
+      "seed": 640000
+    },
+    {
+      "task": "MoveCube",
+      "episode": 1,
+      "seed": 640101
+    },
+    {
+      "task": "MoveCube",
+      "episode": 2,
+      "seed": 640200
+    },
+    {
+      "task": "MoveCube",
+      "episode": 3,
+      "seed": 640300
+    },
+    {
+      "task": "MoveCube",
+      "episode": 4,
+      "seed": 640400
+    },
+    {
+      "task": "MoveCube",
+      "episode": 5,
+      "seed": 640500
+    },
+    {
+      "task": "MoveCube",
+      "episode": 6,
+      "seed": 640600
+    },
+    {
+      "task": "MoveCube",
+      "episode": 7,
+      "seed": 640700
+    },
+    {
+      "task": "MoveCube",
+      "episode": 8,
+      "seed": 640800
+    },
+    {
+      "task": "MoveCube",
+      "episode": 9,
+      "seed": 640900
+    },
+    {
+      "task": "MoveCube",
+      "episode": 10,
+      "seed": 641000
+    },
+    {
+      "task": "MoveCube",
+      "episode": 11,
+      "seed": 641100
+    },
+    {
+      "task": "MoveCube",
+      "episode": 12,
+      "seed": 641200
+    },
+    {
+      "task": "MoveCube",
+      "episode": 13,
+      "seed": 641300
+    },
+    {
+      "task": "MoveCube",
+      "episode": 14,
+      "seed": 641400
+    },
+    {
+      "task": "MoveCube",
+      "episode": 15,
+      "seed": 641500
+    },
+    {
+      "task": "MoveCube",
+      "episode": 16,
+      "seed": 641600
+    },
+    {
+      "task": "MoveCube",
+      "episode": 17,
+      "seed": 641700
+    },
+    {
+      "task": "MoveCube",
+      "episode": 18,
+      "seed": 641800
+    },
+    {
+      "task": "MoveCube",
+      "episode": 19,
+      "seed": 641900
+    },
+    {
+      "task": "MoveCube",
+      "episode": 20,
+      "seed": 642000
+    },
+    {
+      "task": "MoveCube",
+      "episode": 21,
+      "seed": 642100
+    },
+    {
+      "task": "MoveCube",
+      "episode": 22,
+      "seed": 642200
+    },
+    {
+      "task": "MoveCube",
+      "episode": 23,
+      "seed": 642300
+    },
+    {
+      "task": "MoveCube",
+      "episode": 24,
+      "seed": 642400
+    },
+    {
+      "task": "MoveCube",
+      "episode": 25,
+      "seed": 642500
+    },
+    {
+      "task": "MoveCube",
+      "episode": 26,
+      "seed": 642600
+    },
+    {
+      "task": "MoveCube",
+      "episode": 27,
+      "seed": 642700
+    },
+    {
+      "task": "MoveCube",
+      "episode": 28,
+      "seed": 642800
+    },
+    {
+      "task": "MoveCube",
+      "episode": 29,
+      "seed": 642900
+    },
+    {
+      "task": "MoveCube",
+      "episode": 30,
+      "seed": 643000
+    },
+    {
+      "task": "MoveCube",
+      "episode": 31,
+      "seed": 643101
+    },
+    {
+      "task": "MoveCube",
+      "episode": 32,
+      "seed": 643200
+    },
+    {
+      "task": "MoveCube",
+      "episode": 33,
+      "seed": 643300
+    },
+    {
+      "task": "MoveCube",
+      "episode": 34,
+      "seed": 643400
+    },
+    {
+      "task": "MoveCube",
+      "episode": 35,
+      "seed": 643500
+    },
+    {
+      "task": "MoveCube",
+      "episode": 36,
+      "seed": 643600
+    },
+    {
+      "task": "MoveCube",
+      "episode": 37,
+      "seed": 643700
+    },
+    {
+      "task": "MoveCube",
+      "episode": 38,
+      "seed": 643800
+    },
+    {
+      "task": "MoveCube",
+      "episode": 39,
+      "seed": 643900
+    },
+    {
+      "task": "MoveCube",
+      "episode": 40,
+      "seed": 644000
+    },
+    {
+      "task": "MoveCube",
+      "episode": 41,
+      "seed": 644100
+    },
+    {
+      "task": "MoveCube",
+      "episode": 42,
+      "seed": 644200
+    },
+    {
+      "task": "MoveCube",
+      "episode": 43,
+      "seed": 644300
+    },
+    {
+      "task": "MoveCube",
+      "episode": 44,
+      "seed": 644400
+    },
+    {
+      "task": "MoveCube",
+      "episode": 45,
+      "seed": 644500
+    },
+    {
+      "task": "MoveCube",
+      "episode": 46,
+      "seed": 644600
+    },
+    {
+      "task": "MoveCube",
+      "episode": 47,
+      "seed": 644700
+    },
+    {
+      "task": "MoveCube",
+      "episode": 48,
+      "seed": 644801
+    },
+    {
+      "task": "MoveCube",
+      "episode": 49,
+      "seed": 644900
+    },
+    {
+      "task": "PatternLock",
+      "episode": 0,
+      "seed": 650000
+    },
+    {
+      "task": "PatternLock",
+      "episode": 1,
+      "seed": 650100
+    },
+    {
+      "task": "PatternLock",
+      "episode": 2,
+      "seed": 650200
+    },
+    {
+      "task": "PatternLock",
+      "episode": 3,
+      "seed": 650300
+    },
+    {
+      "task": "PatternLock",
+      "episode": 4,
+      "seed": 650400
+    },
+    {
+      "task": "PatternLock",
+      "episode": 5,
+      "seed": 650500
+    },
+    {
+      "task": "PatternLock",
+      "episode": 6,
+      "seed": 650600
+    },
+    {
+      "task": "PatternLock",
+      "episode": 7,
+      "seed": 650700
+    },
+    {
+      "task": "PatternLock",
+      "episode": 8,
+      "seed": 650800
+    },
+    {
+      "task": "PatternLock",
+      "episode": 9,
+      "seed": 650900
+    },
+    {
+      "task": "PatternLock",
+      "episode": 10,
+      "seed": 651000
+    },
+    {
+      "task": "PatternLock",
+      "episode": 11,
+      "seed": 651100
+    },
+    {
+      "task": "PatternLock",
+      "episode": 12,
+      "seed": 651200
+    },
+    {
+      "task": "PatternLock",
+      "episode": 13,
+      "seed": 651300
+    },
+    {
+      "task": "PatternLock",
+      "episode": 14,
+      "seed": 651400
+    },
+    {
+      "task": "PatternLock",
+      "episode": 15,
+      "seed": 651500
+    },
+    {
+      "task": "PatternLock",
+      "episode": 16,
+      "seed": 651600
+    },
+    {
+      "task": "PatternLock",
+      "episode": 17,
+      "seed": 651700
+    },
+    {
+      "task": "PatternLock",
+      "episode": 18,
+      "seed": 651800
+    },
+    {
+      "task": "PatternLock",
+      "episode": 19,
+      "seed": 651900
+    },
+    {
+      "task": "PatternLock",
+      "episode": 20,
+      "seed": 652000
+    },
+    {
+      "task": "PatternLock",
+      "episode": 21,
+      "seed": 652100
+    },
+    {
+      "task": "PatternLock",
+      "episode": 22,
+      "seed": 652200
+    },
+    {
+      "task": "PatternLock",
+      "episode": 23,
+      "seed": 652300
+    },
+    {
+      "task": "PatternLock",
+      "episode": 24,
+      "seed": 652400
+    },
+    {
+      "task": "PatternLock",
+      "episode": 25,
+      "seed": 652500
+    },
+    {
+      "task": "PatternLock",
+      "episode": 26,
+      "seed": 652600
+    },
+    {
+      "task": "PatternLock",
+      "episode": 27,
+      "seed": 652700
+    },
+    {
+      "task": "PatternLock",
+      "episode": 28,
+      "seed": 652800
+    },
+    {
+      "task": "PatternLock",
+      "episode": 29,
+      "seed": 652900
+    },
+    {
+      "task": "PatternLock",
+      "episode": 30,
+      "seed": 653000
+    },
+    {
+      "task": "PatternLock",
+      "episode": 31,
+      "seed": 653100
+    },
+    {
+      "task": "PatternLock",
+      "episode": 32,
+      "seed": 653200
+    },
+    {
+      "task": "PatternLock",
+      "episode": 33,
+      "seed": 653300
+    },
+    {
+      "task": "PatternLock",
+      "episode": 34,
+      "seed": 653400
+    },
+    {
+      "task": "PatternLock",
+      "episode": 35,
+      "seed": 653500
+    },
+    {
+      "task": "PatternLock",
+      "episode": 36,
+      "seed": 653600
+    },
+    {
+      "task": "PatternLock",
+      "episode": 37,
+      "seed": 653700
+    },
+    {
+      "task": "PatternLock",
+      "episode": 38,
+      "seed": 653800
+    },
+    {
+      "task": "PatternLock",
+      "episode": 39,
+      "seed": 653900
+    },
+    {
+      "task": "PatternLock",
+      "episode": 40,
+      "seed": 654000
+    },
+    {
+      "task": "PatternLock",
+      "episode": 41,
+      "seed": 654100
+    },
+    {
+      "task": "PatternLock",
+      "episode": 42,
+      "seed": 654200
+    },
+    {
+      "task": "PatternLock",
+      "episode": 43,
+      "seed": 654300
+    },
+    {
+      "task": "PatternLock",
+      "episode": 44,
+      "seed": 654400
+    },
+    {
+      "task": "PatternLock",
+      "episode": 45,
+      "seed": 654500
+    },
+    {
+      "task": "PatternLock",
+      "episode": 46,
+      "seed": 654600
+    },
+    {
+      "task": "PatternLock",
+      "episode": 47,
+      "seed": 654700
+    },
+    {
+      "task": "PatternLock",
+      "episode": 48,
+      "seed": 654800
+    },
+    {
+      "task": "PatternLock",
+      "episode": 49,
+      "seed": 654900
+    },
+    {
+      "task": "RouteStick",
+      "episode": 0,
+      "seed": 660000
+    },
+    {
+      "task": "RouteStick",
+      "episode": 1,
+      "seed": 660100
+    },
+    {
+      "task": "RouteStick",
+      "episode": 2,
+      "seed": 660200
+    },
+    {
+      "task": "RouteStick",
+      "episode": 3,
+      "seed": 660300
+    },
+    {
+      "task": "RouteStick",
+      "episode": 4,
+      "seed": 660400
+    },
+    {
+      "task": "RouteStick",
+      "episode": 5,
+      "seed": 660500
+    },
+    {
+      "task": "RouteStick",
+      "episode": 6,
+      "seed": 660600
+    },
+    {
+      "task": "RouteStick",
+      "episode": 7,
+      "seed": 660700
+    },
+    {
+      "task": "RouteStick",
+      "episode": 8,
+      "seed": 660800
+    },
+    {
+      "task": "RouteStick",
+      "episode": 9,
+      "seed": 660900
+    },
+    {
+      "task": "RouteStick",
+      "episode": 10,
+      "seed": 661000
+    },
+    {
+      "task": "RouteStick",
+      "episode": 11,
+      "seed": 661100
+    },
+    {
+      "task": "RouteStick",
+      "episode": 12,
+      "seed": 661200
+    },
+    {
+      "task": "RouteStick",
+      "episode": 13,
+      "seed": 661300
+    },
+    {
+      "task": "RouteStick",
+      "episode": 14,
+      "seed": 661400
+    },
+    {
+      "task": "RouteStick",
+      "episode": 15,
+      "seed": 661500
+    },
+    {
+      "task": "RouteStick",
+      "episode": 16,
+      "seed": 661600
+    },
+    {
+      "task": "RouteStick",
+      "episode": 17,
+      "seed": 661700
+    },
+    {
+      "task": "RouteStick",
+      "episode": 18,
+      "seed": 661800
+    },
+    {
+      "task": "RouteStick",
+      "episode": 19,
+      "seed": 661900
+    },
+    {
+      "task": "RouteStick",
+      "episode": 20,
+      "seed": 662000
+    },
+    {
+      "task": "RouteStick",
+      "episode": 21,
+      "seed": 662100
+    },
+    {
+      "task": "RouteStick",
+      "episode": 22,
+      "seed": 662200
+    },
+    {
+      "task": "RouteStick",
+      "episode": 23,
+      "seed": 662300
+    },
+    {
+      "task": "RouteStick",
+      "episode": 24,
+      "seed": 662400
+    },
+    {
+      "task": "RouteStick",
+      "episode": 25,
+      "seed": 662500
+    },
+    {
+      "task": "RouteStick",
+      "episode": 26,
+      "seed": 662600
+    },
+    {
+      "task": "RouteStick",
+      "episode": 27,
+      "seed": 662700
+    },
+    {
+      "task": "RouteStick",
+      "episode": 28,
+      "seed": 662800
+    },
+    {
+      "task": "RouteStick",
+      "episode": 29,
+      "seed": 662900
+    },
+    {
+      "task": "RouteStick",
+      "episode": 30,
+      "seed": 663000
+    },
+    {
+      "task": "RouteStick",
+      "episode": 31,
+      "seed": 663100
+    },
+    {
+      "task": "RouteStick",
+      "episode": 32,
+      "seed": 663200
+    },
+    {
+      "task": "RouteStick",
+      "episode": 33,
+      "seed": 663300
+    },
+    {
+      "task": "RouteStick",
+      "episode": 34,
+      "seed": 663400
+    },
+    {
+      "task": "RouteStick",
+      "episode": 35,
+      "seed": 663500
+    },
+    {
+      "task": "RouteStick",
+      "episode": 36,
+      "seed": 663600
+    },
+    {
+      "task": "RouteStick",
+      "episode": 37,
+      "seed": 663700
+    },
+    {
+      "task": "RouteStick",
+      "episode": 38,
+      "seed": 663800
+    },
+    {
+      "task": "RouteStick",
+      "episode": 39,
+      "seed": 663900
+    },
+    {
+      "task": "RouteStick",
+      "episode": 40,
+      "seed": 664000
+    },
+    {
+      "task": "RouteStick",
+      "episode": 41,
+      "seed": 664100
+    },
+    {
+      "task": "RouteStick",
+      "episode": 42,
+      "seed": 664200
+    },
+    {
+      "task": "RouteStick",
+      "episode": 43,
+      "seed": 664300
+    },
+    {
+      "task": "RouteStick",
+      "episode": 44,
+      "seed": 664400
+    },
+    {
+      "task": "RouteStick",
+      "episode": 45,
+      "seed": 664500
+    },
+    {
+      "task": "RouteStick",
+      "episode": 46,
+      "seed": 664600
+    },
+    {
+      "task": "RouteStick",
+      "episode": 47,
+      "seed": 664700
+    },
+    {
+      "task": "RouteStick",
+      "episode": 48,
+      "seed": 664800
+    },
+    {
+      "task": "RouteStick",
+      "episode": 49,
+      "seed": 664900
+    }
+  ],
+  "metadata_hashes": {
+    "PickXtimes": "ef90bad0a0879431ab949a8f74103c0056c968dc9b67de6131edc2649db5f912",
+    "StopCube": "51939196d43a2613ddee75f86177a00ba405fe3ed83139d88aafdd0dde52fa46",
+    "SwingXtimes": "bdfe0b23b54b369b340ac7ed2ea0ebcbab6a71dc6811e11cea987e686482afb8",
+    "BinFill": "eb5899cba506534b697c00f7be6991bd48126612db0ea09683048da2d8d85fdc",
+    "VideoUnmaskSwap": "f9e5bc38f6af1a236ce387345ac181abd9d25e217baef35b5c1263c6474addf2",
+    "VideoUnmask": "4f17d2506b048acbe3895408f44715ee3962ae4ae4ef12f0bf6f73f600938c9e",
+    "ButtonUnmaskSwap": "e87e93d226ee452000a3680de64d642c76f6f58ec1536dc7c1b84ca630c9d928",
+    "ButtonUnmask": "11157cab24a6c510d508cae284f46d5c4bdeaeca721abe770ef01a7442074520",
+    "VideoRepick": "88bd7aec451c2633b87e55bf61a569435ac14322a0e94bf86e19bd6b0ee5ee78",
+    "VideoPlaceButton": "fee6e76497d6b65c4e5b0f562c5ec927b23c70fe6a767bdad2dcde84420621c9",
+    "VideoPlaceOrder": "3e4f337b2f60312bfc8770fd5def22d1153f5fecb921b55796714cd95858d18e",
+    "PickHighlight": "3addfb9bcd429d4a0fce55e7644563200ebb6aa6ecd4767879f0faa00be5663d",
+    "InsertPeg": "e452dc94c45119b17bc18ef5b74666e645879e94d54f9c3eb0c24e0298ee8b4b",
+    "MoveCube": "544c912f8e5010a79bf6fb8b2a63f9996ba1422d21fdacfd01f49d4f76e6a19e",
+    "PatternLock": "793903e2974e0b006c7ad5632fbff9f0242694b9b23dbee25126dd1a610043cf",
+    "RouteStick": "035056eb89c12b6e1680f751468050ad46b64b0fce96831915b06b4bbe13aba5"
+  },
+  "base_checkpoint": {
+    "config_hashes": {
+      "config.json": "5c5c1506cd7b6120c2e82a456b509e0ff92ab02862f188b22317b5aa8719bc5d",
+      "processor_config.json": "d89ef49ce9cd37fbf510158e13c1ef063d9286411c1ec9049932dbe0487143b1",
+      "stats.json": "73563430bc89cb03836ccfedc159902b0fb603564bd6fd1b553940ce8badbae5",
+      "tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+      "tokenizer_config.json": "94c938abfb77f093f4d914c1215b777e9d1ca91e6a06e4f7ef4b2dc142689c47"
+    },
+    "weight_files": {
+      "model.safetensors": 12688542952
+    },
+    "weight_hashes": {
+      "model.safetensors": "3d0fa9de73353cbd3e0e6c9b798b3747b7126931d42ce3a8cd510be767ffce69"
+    },
+    "weight_content_hashed": true
+  },
+  "train_metadata": {
+    "PickXtimes": "8e74205d7b2a6e44405e491f397a5b8976bafe141e0521eb6a081ab301ef7500",
+    "StopCube": "a25b595c7db754fe35c6c6c24ba48c6ba297f1bf4c444cde2e279e1496619f02",
+    "SwingXtimes": "800fe030a9602a8e97591a459b38ac778a35347ff992dad1d128bd77ff944a45",
+    "BinFill": "9f8d193a7792cbc8ff8e3cf2059b3b2450fbb9657cae19cf5b73c7f79691d908",
+    "VideoUnmaskSwap": "4bc3157f2df0d1366fcd41b751a31fd2424df3edb0a884f6a61b5a73a5b8620d",
+    "VideoUnmask": "e2b220cd931df41181863756a7dc27d71d77e2f9b879b7b72a1f80c4c3614c8c",
+    "ButtonUnmaskSwap": "ab83b540638d43147262927698980a17446d60677e621715f3cfeb10b0211cc7",
+    "ButtonUnmask": "1dce0d86fc611bd76c4cf30652a7cd3395bfc1dedcc63afbb1ca5d4429ed7ac7",
+    "VideoRepick": "bf4e30c0f858fb6c2b4252bccc4537b3b5af5ae3128c7970ba361169fde76077",
+    "VideoPlaceButton": "2f86ccd55df940ef0a0bf55096ee6915ee737569385634699d1aa19b2258644a",
+    "VideoPlaceOrder": "26f4ec3db11dc029e71665da839b883facd6e339efb5905510ac2702e5df2b7c",
+    "PickHighlight": "4ecfe6d79ec86bb183a5d7b0c85e3f963f8e617a9e654c052e4c2e61aeff8a00",
+    "InsertPeg": "bb7b9e16fbcd3b317c6d2bc8fae4e25e2f85258a6bacd9fe2d5742fa2353afbb",
+    "MoveCube": "ffdd7404b3aa10ea76fdf83f37b9020984b8eef530bfa7cd74db9db3f11c7dfd",
+    "PatternLock": "636431f1fa2375ddb42d2687a6ee1e91940fb7c75d0a9134efe069eb65a6f4ef",
+    "RouteStick": "758fed27d275d167fe98ccdf1c3c64f9aa9f8518bf3e002d605fc36c2fdeb42a"
+  },
+  "control_protocol": {
+    "schema": "simplememvla-joint-residual-v2",
+    "split": "train",
+    "state_dim": 170,
+    "action_dim": 7,
+    "offset_timing": "command_old_offset_then_integrate",
+    "tasks": [
+      "PickXtimes",
+      "StopCube",
+      "SwingXtimes",
+      "BinFill",
+      "VideoUnmaskSwap",
+      "VideoUnmask",
+      "ButtonUnmaskSwap",
+      "ButtonUnmask",
+      "VideoRepick",
+      "VideoPlaceButton",
+      "VideoPlaceOrder",
+      "PickHighlight",
+      "InsertPeg",
+      "MoveCube",
+      "PatternLock",
+      "RouteStick"
+    ],
+    "execute_horizon": 16,
+    "max_steps": 1300,
+    "num_denoising_steps": 10,
+    "eval_temperature": 1.0,
+    "max_subtask_tokens": 64,
+    "compute_dtype": "bfloat16",
+    "attn_implementation": "flash_attention_2",
+    "image_size": 84,
+    "delta": 0.001,
+    "gain": 1.0,
+    "offset_bound": 0.02,
+    "enabled_tasks": null,
+    "start_step": 0,
+    "offset_decay": 0.95,
+    "phase_gate": "low_motion",
+    "max_target_span": 0.08,
+    "max_tracking_error": 0.1,
+    "max_gripper_span": 0.1
+  },
+  "scene_generation": {
+    "robomme_sim/robomme/robomme_env/BinFill.py": "8aea134ab670d23703bf01662df0a95a578a3b415918492b02522bc28a72cbb9",
+    "robomme_sim/robomme/robomme_env/ButtonUnmask.py": "7fae02b3bd250a083b1b08ce3f088d8dc1ebba71de8d0ece879ed5f48aaa5615",
+    "robomme_sim/robomme/robomme_env/ButtonUnmaskSwap.py": "d71057b3c66ef05e0bc0ed1c51753ddde41f34435910bef185d08c1f0913112d",
+    "robomme_sim/robomme/robomme_env/InsertPeg.py": "06e3e58b842cf3d66d1c1fd0801d1ed510e91d6a88d4f8bdaa110ecb704339ff",
+    "robomme_sim/robomme/robomme_env/MoveCube.py": "1ebf42689c91dfd5ae9ea121e6ef80d9ee627608cb4ce4369dcdd46627fbbdea",
+    "robomme_sim/robomme/robomme_env/PatternLock.py": "a207187ce72aa01a2a9ed1cd43ee3c3317a11aa009d6e86dd3a825245fe18023",
+    "robomme_sim/robomme/robomme_env/PickHighlight.py": "f4201c641c2cbbb4e8830b59f5d989c93f3b0221906fd57e962dc4ef65cb228e",
+    "robomme_sim/robomme/robomme_env/PickXtimes.py": "9ceb2ee672bfea57e1b038b4a2d70b2eafcf6711c9903c461e8682ded673c30d",
+    "robomme_sim/robomme/robomme_env/RouteStick.py": "4a02a052be72971032df4a0f6cb1acdcf552abfc86d4de31762fe4e04a30472e",
+    "robomme_sim/robomme/robomme_env/StopCube.py": "8e93578daafc119e586e1dec03ed4c46568f0519374ce82776e4da7627a2e32c",
+    "robomme_sim/robomme/robomme_env/SwingXtimes.py": "fa1e906e18fc610faa53400c5f3524c0776c5685ccb8dc350a3b09ed4ea95f62",
+    "robomme_sim/robomme/robomme_env/VideoPlaceButton.py": "230add949c26d1f30e9730e681abea936e4028b02a10383dd4c13b41000e2422",
+    "robomme_sim/robomme/robomme_env/VideoPlaceOrder.py": "32e72a1efb1c51c88686829d61cdac5ffffac7bb8b05f8bb529468eeb6d411ec",
+    "robomme_sim/robomme/robomme_env/VideoRepick.py": "65f535d085dfd4619406c9ff916515d4f0d035452a98d54ad376fdba49558a9f",
+    "robomme_sim/robomme/robomme_env/VideoUnmask.py": "ffee21ff6946a96a22fdc2123b3d8d672a40f10010a6ef1c2b16c18156feeb75",
+    "robomme_sim/robomme/robomme_env/VideoUnmaskSwap.py": "dee98c4f048b4c3f3f7eb7ff1956a24efac41ee65d26140b872926bcf38fd34d",
+    "robomme_sim/robomme/robomme_env/utils/object_generation.py": "c782464428bd552063f139f9c2684b114f4cd724d2e7967d56ee40d57e830163"
+  },
+  "reproduction": "Published-weight evaluation and fresh training are distinct. Training is asynchronous and historical runs resumed after interruptions; a fresh run is not guaranteed bit-identical. Periodic val is disabled in the release training script."
+}
